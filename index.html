@@ -578,11 +578,10 @@
     const ip = {
       ipinfo: '',
       getipinfo() {
-        fetch('https://forge.speedtest.cn/api/location/info')
+        fetch('')
           .then(res => res.json())
           .then(res => {
             // console.log(res);
-            this.ipinfo = `当前IP: ${res.ip} (${res.province} ${res.city}  ${res.distinct} ${res.isp})  `
 
           })
           .catch(err => {
